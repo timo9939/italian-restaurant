@@ -17,13 +17,13 @@ body{
 .header{
     position: fixed;
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
     padding: 0 20px;
 
 }
 
 nav{    
-    background-color: green;
+    /* background-color: green; */
     font-family: 'Chivo', sans-serif;
     color: white;
     display: flex;
@@ -33,27 +33,60 @@ nav{
 }
 
 .nav_logo{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
+    color: rgb(253, 34, 34);
+    text-decoration: none;
 }
 
 .nav_items{
-    /* justify-content: space-between; */
+    font-size: 20px;
+    /* background-color: yellow; */
+width: 50vw;
 display: flex;   
  list-style-type: none;
- justify-content:space-between ;
+padding: 0;
+gap: 5vw;
+
+justify-content: flex-end;
+ /* justify-content:space-evenly ; */
  
 }
 
 .nav_item{
-    width: 20vw;
-background-color: yellow;
-border:solid 1px black;
+    /* width: 20vw; */
+/* background-color: rgb(0, 0, 0);
+border:solid 1px black; */
+column-gap: 50px; 
 
 
-   
 }
 
+.nav_item .nav_link{
+    color: white;
+    text-decoration: none;
+    /* justify-content:space-evenly ; */
+}
 
+.nav_link:hover{
+color: rgba(99, 247, 88, 0.918);
+}
 
+.register{
+    font-size: 18px;
+    color: white;
+padding: 1.2vh 1vw;
+background-color: transparent;
+border: 2px solid white;
+border-radius: 10px;
+}
+
+.register:hover{
+cursor: pointer  
+}
+
+.register:active{
+    scale: 0.85;
+   
+}
 
