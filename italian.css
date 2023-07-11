@@ -1,11 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700;900&display=swap');
+
+
+
 *{
     box-sizing: border-box;
+    margin: 0px;
 }
 
-ul{
-    list-style-type: none;
-}
 
 body{
-    background-image: ;
+    background-image: url(cover-img.jpg);
+    background-size: cover;
 }
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 0 20px;
+
+}
+
+nav{    
+    background-color: green;
+    font-family: 'Chivo', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.nav_logo{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.nav_items{
+    /* justify-content: space-between; */
+display: flex;   
+ list-style-type: none;
+ justify-content:space-between ;
+ 
+}
+
+.nav_item{
+    width: 20vw;
+background-color: yellow;
+border:solid 1px black;
+
+
+   
+}
+
+
+
+
