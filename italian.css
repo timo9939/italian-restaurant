@@ -6,6 +6,7 @@
 *{
     box-sizing: border-box;
     margin: 0px;
+    font-family: 'Chivo', sans-serif;
 }
 
 
@@ -154,4 +155,28 @@ color:rgb(41, 150, 239);
 transform: translateX(90%);
 top: 40%;
 font-size: 16px;
+}
+
+.input_box > input:focus{
+    /* border-color: yellowgreen; */
+    
+}
+
+.option_field{
+    display: flex;
+   /* justify-content: space-between; */
+   align-content: center;
+   margin-top: 5vh;
+}
+
+.checkbox{
+    display: flex;
+    column-gap: 0.5vw;
+    flex-wrap: nowrap;
+}
+
+.forgot_pw{
+    max-width: min-content;
+    align-items: flex-end;
+    text-align: right;
 }
