@@ -106,7 +106,7 @@ width: 100%;
     top: 50%;
     background-color: aliceblue;
     transform: translate(-50%,-50%);
-    padding: 1vw;
+    padding: 2vw;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(213, 212, 212);
     /* z-index: 101; */
@@ -129,9 +129,29 @@ text-align: center;
     margin-top: 5vh;
     width: 100%;
     height: 40px;
+    
 }
 
 .input_box input{
     width: 100%;
     height: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0px 2vw;
+}
+
+.input_box i{
+position: absolute;
+top:10%;
+left: 0.5vw;
+transform: translateY(50%);
+
+}
+
+.input_box i.fa-eye-slash{
+right: 0;
+color:rgb(41, 150, 239);
+transform: translateX(90%);
+top: 40%;
+font-size: 16px;
 }
