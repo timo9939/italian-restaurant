@@ -100,9 +100,9 @@ border:2px solid rgb(229, 48, 229);
 /* login Form */
 .form_container{
     position:absolute;
-max-width: 320px;
+max-width: 350px;
 width: 100%;
-
+/* height: 100vh; */
     left: 50%;
     top: 50%;
     background-color: aliceblue;
@@ -167,16 +167,41 @@ font-size: 16px;
    /* justify-content: space-between; */
    align-content: center;
    margin-top: 5vh;
+   column-gap: 1.2vw;
 }
 
-.checkbox{
+.checkbox {
+align-content: center;
     display: flex;
     column-gap: 0.5vw;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+   
+ 
+}
+
+.checkbox label{
+    justify-items: center;
+    align-content: center;
 }
 
 .forgot_pw{
-    max-width: min-content;
-    align-items: flex-end;
-    text-align: right;
+    max-width: fit-content;
+
+    flex-wrap: wrap;
+    /* border: solid red ; */
+    position: relative;
+    right: 0px;
+}
+
+.form_container .button{
+margin-top: 2vw;
+margin-bottom: 2vw;
+   width: 100%;
+    background-color: rgba(158, 75, 247, 0.575);
+    padding: 0.8vw;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+   
 }
