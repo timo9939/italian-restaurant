@@ -111,6 +111,7 @@ width: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(213, 212, 212);
     /* z-index: 101; */
+ 
 }
 
 .form-close{
@@ -157,10 +158,6 @@ top: 40%;
 font-size: 16px;
 }
 
-.input_box > input:focus{
-    /* border-color: yellowgreen; */
-    
-}
 
 .option_field{
     display: flex;
@@ -206,8 +203,25 @@ margin-bottom: 2vw;
    
 }
 
+/* Login button display login Page */
+
+.home{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.home.show{
+opacity: 1;
+pointer-events: auto;
+}
+
+#closeFormBtn:hover{
+    cursor: pointer;
+}
+
 /* Sign Up Form */
 
 .form.signUp_form{
 display: none;
 }
+
