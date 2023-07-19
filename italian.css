@@ -150,12 +150,24 @@ transform: translateY(50%);
 
 }
 
-.input_box i.fa-eye-slash{
+.input_box i.fa-eye-slash {
 right: 0;
 color:rgb(41, 150, 239);
 transform: translateX(90%);
 top: 40%;
 font-size: 16px;
+opacity: 1;
+pointer-events: auto;
+}
+
+i.fa-eye{
+right: 0;
+color:rgb(41, 150, 239);
+transform: translateX(90%);
+top: 40%;
+font-size: 16px;
+opacity: 0;
+pointer-events: none;
 }
 
 
