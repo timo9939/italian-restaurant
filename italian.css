@@ -237,3 +237,6 @@ pointer-events: auto;
 display: none;
 }
 
+.form.signUp_form.show{
+    display: block;
+}
