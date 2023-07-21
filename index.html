@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="italian.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="italian-login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -22,6 +23,29 @@
         <button class="login" id="form_open">Login</button>
     </nav>
 </header>
+
+<!-- Main Content -->
+<main>
+<!-- Main Image -->
+<section class="slider-container">
+<div class="infoContainer">
+    <div class="infoContent">
+        <h1>Summer Discount</h1>
+<span></span>
+    </div>
+
+    <button>Go to Menu</button>
+</div>
+<img src="./photo/pizza-main.jpg" id="main-pizza" alt="main-pizza">
+</section>
+
+</main>
+
+
+
+
+
+
 
 <!-- Home Login-->
 <section class="home">
@@ -73,15 +97,17 @@
     </div>
     
     <div class="input_box">
-        <input type="password" placeholder="Enter your password" required>
+        <input type="password" placeholder="Enter your password" class="inputPassword" required>
         <i class="fa-solid fa-lock" style="color: #296A6A;"></i>
         <i class="fa-sharp fa-solid fa-eye-slash"></i>
+        <i class="fa-solid fa-eye"></i>
     </div>
 
     <div class="input_box">
-        <input type="password" placeholder="Confirm your password" required>
+        <input type="password" placeholder="Confirm your password" class="inputPassword" required>
         <i class="fa-solid fa-lock" style="color: #296A6A;"></i>
         <i class="fa-sharp fa-solid fa-eye-slash"></i>
+        <i class="fa-solid fa-eye"></i>
     </div>
 
     <!-- Forget password and remember me -->
@@ -97,7 +123,7 @@
 
 <button class="button">Sign Up</button>
 
-<div class="login_signup">Already have an account? <a href="#" id="SignUp">Log in</a></div>
+<div class="login_signup">Already have an account? <a href="#" id="changeToLoginBtn">Log in</a></div>
 
 </form>
     </div>
@@ -105,6 +131,6 @@
     </div>
 </section>
 
-    <script src="italian.js"></script>
+    <script src="logIn&signUp.js"></script>
 </body>
 </html>

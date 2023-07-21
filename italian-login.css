@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700;900&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Chivo', sans-serif;
+}
+
+
+body{
+    background-image: url(cover-img.jpg);
+    background-size: cover;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    /* background-color: black; */
+    padding: 0 20px;
+
+}
+
+nav{    
+    /* background-color: green; */
+    font-family: 'Chivo', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.nav_logo{
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(253, 34, 34);
+    text-decoration: none;
+}
+
+.nav_items{
+    font-size: 20px;
+    /* background-color: yellow; */
+width: 50vw;
+display: flex;   
+ list-style-type: none;
+padding: 0;
+gap: 5vw;
+
+justify-content: flex-end;
+ /* justify-content:space-evenly ; */
+ 
+}
+
+.nav_item{
+    /* width: 20vw; */
+/* background-color: rgb(0, 0, 0);
+border:solid 1px black; */
+column-gap: 50px; 
+
+
+}
+
+.nav_item .nav_link{
+    color: white;
+    text-decoration: none;
+    /* justify-content:space-evenly ; */
+}
+
+.nav_link:hover{
+color: rgba(99, 247, 88, 0.918);
+}
+
+.login{
+    position: relative;
+    right: 3vw;
+    font-size: 18px;
+    color: white;
+padding: 1.2vh 1vw;
+background-color: transparent;
+border: 2px solid white;
+border-radius: 10px;
+}
+
+.login:hover{
+cursor: pointer;  
+color:rgb(229, 48, 229);
+border:2px solid rgb(229, 48, 229);
+}
+
+.login:active{
+    scale: 0.85;
+   
+}
+
+
+
+/* login Form */
+.form_container{
+    position:absolute;
+max-width: 350px;
+width: 100%;
+/* height: 100vh; */
+    left: 50%;
+    top: 50%;
+    background-color: aliceblue;
+    transform: translate(-50%,-50%);
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(213, 212, 212);
+    /* z-index: 101; */
+ 
+}
+
+.form-close{
+    position:absolute;
+    top: 1vw;
+    right: 1vw;
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+.login_form h2{
+text-align: center;
+}
+
+.input_box{
+    position: relative;
+    margin-top: 5vh;
+    width: 100%;
+    height: 40px;
+    
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0px 2vw;
+}
+
+.input_box i{
+position: absolute;
+top:10%;
+left: 0.5vw;
+transform: translateY(50%);
+
+}
+
+.input_box i.fa-eye-slash {
+right: 0;
+color:rgb(41, 150, 239);
+transform: translateX(90%);
+top: 40%;
+font-size: 16px;
+opacity: 1;
+pointer-events: auto;
+}
+
+i.fa-eye{
+right: 0;
+color:rgb(41, 150, 239);
+transform: translateX(90%);
+top: 40%;
+font-size: 16px;
+opacity: 0;
+pointer-events: none;
+}
+
+
+.option_field{
+    display: flex;
+   /* justify-content: space-between; */
+   align-content: center;
+   margin-top: 5vh;
+   column-gap: 1.2vw;
+}
+
+.checkbox {
+align-content: center;
+    display: flex;
+    column-gap: 0.5vw;
+    /* flex-wrap: nowrap; */
+   
+ 
+}
+
+.checkbox label{
+    justify-items: center;
+    align-content: center;
+}
+
+.forgot_pw{
+    max-width: fit-content;
+
+    flex-wrap: wrap;
+    /* border: solid red ; */
+    position: relative;
+    right: 0px;
+}
+
+.form_container .button{
+margin-top: 2vw;
+margin-bottom: 2vw;
+   width: 100%;
+    background-color: rgba(158, 75, 247, 0.575);
+    padding: 0.8vw;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+/* Login button display login Page */
+
+.home{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.home.show{
+opacity: 1;
+pointer-events: auto;
+}
+
+#closeFormBtn:hover{
+    cursor: pointer;
+}
+
+/* Sign Up Form */
+
+.form.signUp_form{
+display: none;
+}
+
+.form.signUp_form.show{
+    display: block;
+}
